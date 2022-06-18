@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aaa{
+            border: 1px solid greenyellow;
+            padding: 10px;
+            z-index: 1;
+        }
+        .a{
+            position:absolute;
+            font-size: large;
+            top: 55px;
+            left: 30px;
+            z-index: 2;
+            background-color:white;
+            color: aquamarine;
+        }
+        .form{
+            background-color: aquamarine;
+            opacity: 0.6;
+            line-height:15px ;
+        }
+         span{
+             color: blue;
+             font-size: large;
+             line-height: 40px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         }
+         #name,#number,#password,#submit,button{
+             border-radius: 5px;
+             box-shadow: 3px 3px 4px rgb(78, 212, 96);
+             line-height: 20px;
+         }
+        textarea{
+            height: 80px;
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form case1</h1>
+    <div class="aaa">
+    <div class="a">registration From</div>
+    <form class="form">
+       <span>Your name:</span></br>
+        <input type="text" value="" id="name" placeholder="请输入你的名字"/></br>
+        <span>Your number:</span></br>
+        <input type="text" value="" id="number" placeholder="请输入你的电话号码"/></br>
+        <span>Your gender:</span></br>
+        <input type="radio" value="" id="" name="gender"/>Male
+        <input type="radio" value="" id="" name="gender"/>Female</br>
+        <span>Your hobby:</span></br>
+        <input type="checkbox" value="" id="" />Book</br>
+        <input type="checkbox" value="" id="" />Music</br>
+        <input type="checkbox" value="" id="" />Moive</br>
+        <input type="checkbox" value="" id="" />Write</br>
+        <input type="checkbox" value="" id="" />Basketball</br>
+        <input type="checkbox" value="" id="" />photoshop</br>
+        <span>Your grade:</span></br>
+        <select name="grade">
+            <option> grade1</option>
+            <option> grade2</option>
+            <option> grade3</option>
+            <option> grade4</option>
+        </select>
+        <br>
+        <span>Your suggestion:</span></br>
+        <textarea placeholder="tell me something">
+
+        </textarea>
+        <br>
+        <span>password</span>
+        <br>
+        <input type="password" value="" placeholder="请输入密码" id="password"><br>
+        <br>
+        <br>
+        <input type="submit" value="submit" id="submit">&nbsp;&nbsp;&nbsp;<button>back</button>
+    </form></div>
+</body>
+</html>
